@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+class Instrument
+{
+public:
+void makeSound()
+{
+cout<<"Instrument is playing"<<endl;
+}
+};
+
+class Accordina:public Instrument
+{
+public:
+void makeSound()
+{
+cout<<"Accordinat is playing"<<endl;
+}
+};
+int main()
+{
+Instrument* i=new Accordina();
+i->makeSound();
+}
